@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Exam Application</string>
+    <string name="thumbs_up">thumbs up</string>
+    <string name="tick_mark">tick mark</string>
+</resources>
