@@ -20,18 +20,16 @@ class RecylerFragment:Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val rootView=inflater.inflate(R.layout.recycler_fragment,container,false)
-
-        mRecyclerView=rootView.findViewById(R.id.recycler1)
-
-        mRecyclerView.layoutManager=LinearLayoutManager(context,RecyclerView.VERTICAL,false)
-
-        mRecyclerView.adapter=mAdapter
-
         return rootView
     }
 
     override fun onViewCreated(rootView: View, savedInstanceState: Bundle?) {
         super.onViewCreated(rootView, savedInstanceState)
+        mRecyclerView=rootView.findViewById(R.id.recycler1)
+
+        mRecyclerView.layoutManager=LinearLayoutManager(requireContext(),RecyclerView.VERTICAL,false)
+
+        mRecyclerView.adapter=mAdapter
     }
 
 
