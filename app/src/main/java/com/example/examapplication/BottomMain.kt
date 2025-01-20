@@ -3,14 +3,15 @@ package com.example.examapplication
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentActivity
 import com.example.examapplication.fragments.RecylerFragment
 import com.example.examapplication.fragments.ViewPagerFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class BottomMain:FragmentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+class BottomMain:AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
         setContentView(R.layout.bottom_navigation_main)
 
