@@ -13,7 +13,7 @@ class ViewPageAdapter(fragment:Fragment):FragmentStateAdapter(fragment) {
     }
 
     override fun createFragment(position: Int): Fragment {
-        TODO("Not yet implemented")
+        return mFragmentList[position]
     }
 
     fun getTabTitle(position: Int): String {
